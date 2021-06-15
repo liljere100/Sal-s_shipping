@@ -1,0 +1,25 @@
+weight = 41.5
+# Ground Shipping
+if weight <= 2:
+  cost = weight * 1.50 + 20.00
+elif weight <= 6:
+  cost = weight * 3.00 + 20.00
+elif weight <= 10:
+  cost = weight * 4.00 + 20.00
+elif weight > 10:
+  cost = weight * 4.75 + 20.00
+print(cost)
+premium_cost = cost + (125 - 20)
+print(premium_cost)
+# Drone Shipping
+if weight <= 2:
+  cost = weight * 4.50 + 0.00
+elif weight <= 6:
+  cost = weight * 9.00 + 0.00
+elif weight <= 10:
+  cost = weight * 12.00 + 0.00
+elif weight > 10:
+  cost = weight * 14.25 + 0.00
+print(cost)
+# The cheapest method of shiping a 4.8 pound package would be ground shipping, and the cost = 34.4
+# The cheapest method of shipping a 41.5 pound package would be ground shipping, and the cost = 217.125 
